@@ -3,139 +3,184 @@
 <head>
 	<title>Ilias Abubakar Portfolio</title>
 	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<style>
+		body {
+			margin: 0;
+			font-family: Arial, sans-serif;
+			background: #f6f7fb;
+			color: #111;
+		}
+
+		.hero {
+			background: #111;
+			color: white;
+			text-align: center;
+			padding: 60px 20px;
+		}
+
+		.hero h1 {
+			margin: 0;
+			font-size: 36px;
+		}
+
+		.hero p {
+			margin-top: 10px;
+			color: #ccc;
+		}
+
+		.hero a {
+			color: #4da3ff;
+			text-decoration: none;
+			margin: 0 8px;
+		}
+
+		.container {
+			max-width: 1100px;
+			margin: auto;
+			padding: 40px 20px;
+		}
+
+		h2 {
+			text-align: center;
+			margin-bottom: 30px;
+		}
+
+		.grid {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+			gap: 20px;
+		}
+
+		.card {
+			background: white;
+			border-radius: 12px;
+			overflow: hidden;
+			box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+			transition: 0.2s;
+		}
+
+		.card:hover {
+			transform: translateY(-5px);
+		}
+
+		.card img {
+			width: 100%;
+			height: 180px;
+			object-fit: cover;
+		}
+
+		.card-content {
+			padding: 15px;
+		}
+
+		.card h3 {
+			margin: 0 0 10px 0;
+		}
+
+		.card p {
+			font-size: 14px;
+			color: #555;
+		}
+
+		.btn {
+			display: inline-block;
+			margin-top: 10px;
+			padding: 8px 12px;
+			background: #111;
+			color: white;
+			text-decoration: none;
+			border-radius: 6px;
+		}
+
+		.btn:hover {
+			background: #333;
+		}
+
+		footer {
+			text-align: center;
+			padding: 30px;
+			background: #111;
+			color: white;
+			margin-top: 40px;
+		}
+
+		footer a {
+			color: #4da3ff;
+			text-decoration: none;
+			margin: 0 10px;
+		}
+	</style>
 </head>
 
-<body class="is-preload">
+<body>
 
-<div id="wrapper">
+<!-- HERO -->
+<div class="hero">
+	<h1>Ilias Abubakar</h1>
+	<p>Entry-Level Data Analyst | SQL | Excel | Power BI</p>
 
-	<!-- INTRO -->
-	<div id="intro">
-		<h1>Ilias Abubakar</h1>
-
-		<p>
-			Aspiring Data Analyst well versed in SQL, Excel, and Power BI <br />
-			<a href="https://www.instagram.com/boubailias">@boubailias</a>
-		</p>
-
-		<ul class="actions">
-			<li>
-				<a href="#main" class="button icon solid solo fa-arrow-down scrolly">Continue</a>
-			</li>
-		</ul>
-	</div>
-
-	<!-- HEADER -->
-	<header id="header">
-		<a href="index.html" class="logo">Portfolio</a>
-	</header>
-
-	<!-- NAV -->
-	<nav id="nav">
-		<ul class="links">
-			<li class="active"><a href="index.html">Projects</a></li>
-		</ul>
-	</nav>
-
-	<!-- MAIN -->
-	<div id="main">
-
-		<!-- PROJECT 1 -->
-		<article class="post featured">
-
-			<header class="major">
-				<h2>Bike Sales Dashboard (Excel)</h2>
-			</header>
-
-			<a class="image main">
-				<img src="images/excel.png" alt="Excel Dashboard" />
-			</a>
-
-			<p>
-				In this project we take raw bike sales data and transform it in Excel using data cleaning techniques,
-				Pivot Tables, charts, and slicers to make it more usable for analysis.
-			</p>
-
-			<ul class="actions special">
-				<li><a href="https://github.com/IliasAbubakar/bike-sales-dashboard-excel" class="button large">View Project</a></li>
-			</ul>
-
-		</article>
-
-		<!-- PROJECT 2 -->
-		<article class="post">
-
-			<header class="major">
-				<h2>Data Professional Breakdown (Power BI)</h2>
-			</header>
-
-			<a class="image fit">
-				<img src="images/power.png" alt="Power BI Dashboard" />
-			</a>
-
-			<p>
-				In this project we use Power BI to explore survey data from data professionals.
-				It analyzes salary trends, job roles, programming languages, and job satisfaction across careers.
-			</p>
-
-			<ul class="actions special">
-				<li><a href="https://github.com/IliasAbubakar/data-professional-breakdown-dashboard" class="button">View Project</a></li>
-			</ul>
-
-		</article>
-
-	</div>
-
-	<!-- FOOTER -->
-	<footer id="footer">
-
-		<section>
-			<h3>Address</h3>
-			<p>Ghana, Ashanti Region</p>
-		</section>
-
-		<section>
-			<h3>Phone</h3>
-			<p>+233556227421</p>
-		</section>
-
-		<section>
-			<h3>Email</h3>
-			<p>iliasboubakar@gmail.com</p>
-		</section>
-
-		<section>
-	<h3>Social</h3>
 	<p>
-		<a href="https://www.linkedin.com/in/ilias-abubakar-98b0303a0/" target="_blank">LinkedIn</a> |
+		<a href="https://www.linkedin.com/in/ilias-abubakar-98b0303a0/" target="_blank">LinkedIn</a>
 		<a href="https://github.com/IliasAbubakar" target="_blank">GitHub</a>
-		
 	</p>
-</section>
-
-	</footer>
-
-	<!-- COPYRIGHT -->
-	<div id="copyright">
-		<ul>
-			<li>&copy; Ilias Abubakar</li>
-		
-		</ul>
-	</div>
-
 </div>
 
-<!-- SCRIPTS -->
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/jquery.scrollex.min.js"></script>
-<script src="assets/js/jquery.scrolly.min.js"></script>
-<script src="assets/js/browser.min.js"></script>
-<script src="assets/js/breakpoints.min.js"></script>
-<script src="assets/js/util.js"></script>
-<script src="assets/js/main.js"></script>
+<!-- PROJECTS -->
+<div class="container">
+	<h2>Projects</h2>
+
+	<div class="grid">
+
+		<!-- PROJECT 1 -->
+		<div class="card">
+			<img src="images/excel.png" />
+			<div class="card-content">
+				<h3>Bike Sales Dashboard (Excel)</h3>
+				<p>
+					Excel dashboard using Pivot Tables, data cleaning, and charts to analyze bike sales performance.
+				</p>
+				<a class="btn" href="https://github.com/IliasAbubakar/bike-sales-dashboard-excel">View Project</a>
+			</div>
+		</div>
+
+		<!-- PROJECT 2 -->
+		<div class="card">
+			<img src="images/power.png" />
+			<div class="card-content">
+				<h3>Data Professional Breakdown (Power BI)</h3>
+				<p>
+					Power BI dashboard analyzing salary trends, job roles, and survey insights from data professionals.
+				</p>
+				<a class="btn" href="https://github.com/IliasAbubakar/data-professional-breakdown-dashboard">View Project</a>
+			</div>
+		</div>
+
+		<!-- PROJECT 3 -->
+		<div class="card">
+			<img src="images/excel2.png" />
+			<div class="card-content">
+				<h3>Logistics Trade Analysis (Excel)</h3>
+				<p>
+					Analyzed import/export trade data across ports, products, and delivery times to identify performance trends.
+				</p>
+				<a class="btn" href="https://github.com/IliasAbubakar/Logistics-Trade-Analysis-Dashboard-2025">View Project</a>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+	<p>Ghana, Ashanti Region | +233556227421 | iliasboubakar@gmail.com</p>
+
+	<p>
+		<a href="https://www.linkedin.com/in/ilias-abubakar-98b0303a0/">LinkedIn</a>
+		<a href="https://github.com/IliasAbubakar">GitHub</a>
+	</p>
+</footer>
 
 </body>
 </html>
